@@ -164,19 +164,19 @@ public class InvestCalc extends javax.swing.JFrame {
             
             chart += "\n" + (year + 1) + "\t\t" + money.format(prince);
             //get q1
-            intrestAmt = (prince /100) * 2.5;
+            intrestAmt = (prince /100) * rate / 4;
             intrestAmtYear+=intrestAmt;
             prince+=intrestAmt;
             //get q2
-            intrestAmt = (prince /100) * 2.5;
+            intrestAmt = (prince /100) * rate / 4;
             intrestAmtYear+=intrestAmt;
             prince+=intrestAmt;
             //get q3
-            intrestAmt = (prince /100) * 2.5;
+            intrestAmt = (prince /100) * rate / 4;
             intrestAmtYear+=intrestAmt;
             prince+=intrestAmt;
             //get q4
-            intrestAmt = (prince /100) * 2.5;
+            intrestAmt = (prince /100) * rate / 4;
             intrestAmtYear+=intrestAmt;
             prince+=intrestAmt;
             
