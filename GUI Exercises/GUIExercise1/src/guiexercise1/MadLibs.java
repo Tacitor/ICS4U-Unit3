@@ -14,6 +14,7 @@ import java.util.Scanner;
  * @author lukra1175
  */
 public class MadLibs extends javax.swing.JFrame {
+    
 
     static int randInt;
     static String madLib;
@@ -29,6 +30,8 @@ public class MadLibs extends javax.swing.JFrame {
      */
     public MadLibs() {
         initComponents();
+        
+        this.setTitle("Mad Libs");
 
         //try and load in the data files
         try {
