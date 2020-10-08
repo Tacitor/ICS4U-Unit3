@@ -23,6 +23,7 @@ public class SlotMachine extends javax.swing.JFrame {
      */
     public SlotMachine() {
         initComponents();
+        //set the title
         this.setTitle("Slot Machine");
     }
 
