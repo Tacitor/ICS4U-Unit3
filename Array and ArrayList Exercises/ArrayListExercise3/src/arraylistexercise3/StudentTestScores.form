@@ -27,104 +27,81 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="namelbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="test1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="test1Lbl1" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="test1Lbl2" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="avgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="countLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="globalAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="highAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="highScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="test1Txt" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="test2Txt" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="test3Txt" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="nameTxt" min="-2" pref="200" max="-2" attributes="0"/>
-                          <Component id="avgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="firstBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="backBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="nextBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lastBtn" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="addBtn" alignment="1" min="-2" pref="65" max="-2" attributes="0"/>
-                          <Component id="modifyBtn" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="modifyBtn" max="32767" attributes="0"/>
+                          <Component id="addBtn" max="32767" attributes="0"/>
+                          <Component id="deleteBtn" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="globalAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="highAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="highScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="countTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
+                          <Component id="firstBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="nextBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lastBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="indexLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="highAvgScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="highTestScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="highAvgScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="highTestScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="indexTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="countLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="globalAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="highAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="highScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="globalAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="highAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="highScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="countTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="indexLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="highAvgScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="highTestScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="highAvgScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="highTestScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="indexTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="namelbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="nameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="test1Lbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="test1Txt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="addBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="test2Txt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="test1Lbl1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="modifyBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="addBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="modifyBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deleteBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="test3Txt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="test1Lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="avgTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="avgLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="nextBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -152,7 +129,7 @@
                           <Component id="highScoreLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="indexTxt" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="indexLbl" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -169,40 +146,12 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="namelbl">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Name:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="test1Lbl">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Test 1:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="test1Lbl1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Test 2:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="test1Lbl2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Test 3:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="nameTxt">
-    </Component>
-    <Component class="javax.swing.JTextField" name="test1Txt">
-    </Component>
-    <Component class="javax.swing.JTextField" name="test2Txt">
-    </Component>
-    <Component class="javax.swing.JTextField" name="test3Txt">
-    </Component>
     <Component class="javax.swing.JButton" name="addBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
@@ -213,25 +162,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="modifyBtn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Modify"/>
+        <Property name="text" type="java.lang.String" value="Overwite"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modifyBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="avgTxt">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="avgLbl">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Average:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="nextBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="&gt;"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextBtnActionPerformed"/>
@@ -240,6 +181,7 @@
     <Component class="javax.swing.JButton" name="backBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backBtnActionPerformed"/>
@@ -248,6 +190,7 @@
     <Component class="javax.swing.JButton" name="firstBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;&lt;"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="firstBtnActionPerformed"/>
@@ -256,6 +199,7 @@
     <Component class="javax.swing.JButton" name="lastBtn">
       <Properties>
         <Property name="text" type="java.lang.String" value="&gt;&gt;"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lastBtnActionPerformed"/>
@@ -332,6 +276,125 @@
         <Property name="editable" type="boolean" value="false"/>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="namelbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Lbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Lbl1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Lbl2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="avgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="132" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="test1Txt" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="test2Txt" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="test3Txt" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="nameTxt" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Component id="avgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="namelbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="nameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="test1Lbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="test2Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Lbl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="test3Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="test1Lbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="avgTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="avgLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="avgLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Average:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="namelbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="test1Lbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test 1:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="test1Lbl1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test 2:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="test1Lbl2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test 3:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="nameTxt">
+          <Properties>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Text Cursor"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="test1Txt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="test2Txt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="test3Txt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="avgTxt">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="deleteBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Delete"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
