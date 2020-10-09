@@ -29,54 +29,60 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="32" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="modifyBtn" max="32767" attributes="0"/>
-                          <Component id="addBtn" max="32767" attributes="0"/>
-                          <Component id="deleteBtn" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="modifyBtn" max="32767" attributes="0"/>
+                                  <Component id="addBtn" max="32767" attributes="0"/>
+                                  <Component id="deleteBtn" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="saveBtn" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="countLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="globalAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="highAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="highScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="globalAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="highAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="highScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="countTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="indexLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="highAvgScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="highTestScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="highAvgScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="highTestScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="indexTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
-                              <Component id="firstBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="backBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="nextBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lastBtn" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="countLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="globalAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="highAvgLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="highScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="globalAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="highAvgTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="highScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="countTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="indexLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="highAvgScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="highTestScoreLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="highAvgScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="highTestScoreTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="indexTxt" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
+                      <Component id="firstBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="nextBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lastBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="loadBtn" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -87,7 +93,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="addBtn" min="-2" max="-2" attributes="0"/>
@@ -95,6 +101,8 @@
                       <Component id="modifyBtn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="deleteBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="saveBtn" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -105,6 +113,7 @@
                           <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="firstBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lastBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="loadBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -392,6 +401,22 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteBtnActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="loadBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Load"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadBtnActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="saveBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveBtnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
