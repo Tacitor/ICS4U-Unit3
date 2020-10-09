@@ -19,17 +19,17 @@ public class ArrayListExercise1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         //vars
-        ArrayList<Integer> evenList =  new ArrayList();
-        ArrayList<Integer> oddList =  new ArrayList();
-        ArrayList<Integer> negativeList =  new ArrayList();
+        ArrayList<Integer> evenList = new ArrayList();
+        ArrayList<Integer> oddList = new ArrayList();
+        ArrayList<Integer> negativeList = new ArrayList();
         int input;
         int num = 10;//how many times to loop
-        
+
         for (int i = 0; i < num; i++) {
             input = Integer.parseInt(JOptionPane.showInputDialog("Enter a number (" + (num - i) + " left): "));
-            
+
             //check which ArrayList to store it in
             if (input < 0) {
                 negativeList.add(input);
@@ -41,21 +41,20 @@ public class ArrayListExercise1 {
                 System.out.println("This is a bug, and something when wrong");
             }
         }
-        
+
         //display the results
         System.out.println("You entered the folling even numbers:");
-        for (int even: evenList) {
-            System.out.println(even);
-        }
+
+        System.out.println(evenList);
+
         System.out.println("You entered the folling odd numbers:");
-        for (int odd: oddList) {
-            System.out.println(odd);
-        }
+
+        System.out.println(oddList);
+
         System.out.println("You entered the folling negative numbers:");
-        for (int negative: negativeList) {
-            System.out.println(negative);
-        }
-        
+
+        System.out.println(negativeList);
+
     }
-    
+
 }
