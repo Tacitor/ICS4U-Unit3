@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -20,14 +21,15 @@ public class StudentTestScores extends javax.swing.JFrame {
 
     private static ArrayList<Student> students = new ArrayList();
     private static int index = 0;
+    private static String address = System.getProperty("user.home") + "\\Documents\\StudentTestScores.txt";
 
     /**
      * Creates new form StudentTestScores
      */
     public StudentTestScores() {
         initComponents();
-        loadTestingArr();
-        updateTextFields();
+        //loadTestingArr();
+        //updateTextFields();
     }
 
     /**
@@ -173,14 +175,14 @@ public class StudentTestScores extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(namelbl)
                     .addComponent(test1Lbl)
                     .addComponent(test1Lbl1)
                     .addComponent(test1Lbl2)
                     .addComponent(avgLbl))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                .addGap(132, 132, 132)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -249,16 +251,13 @@ public class StudentTestScores extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(modifyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(addBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(deleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addComponent(saveBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(modifyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(addBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(deleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(saveBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(countLbl)
@@ -282,7 +281,7 @@ public class StudentTestScores extends javax.swing.JFrame {
                             .addComponent(highTestScoreTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(indexTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(174, 174, 174)
                         .addComponent(firstBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -292,7 +291,7 @@ public class StudentTestScores extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lastBtn)
                         .addGap(47, 47, 47)
-                        .addComponent(loadBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(loadBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -432,6 +431,10 @@ public class StudentTestScores extends javax.swing.JFrame {
 
     private void loadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadBtnActionPerformed
         // TODO add your handling code here:
+        load();
+        enableButtons();
+        index = 0;
+        updateTextFields();
     }//GEN-LAST:event_loadBtnActionPerformed
 
     private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
@@ -440,16 +443,34 @@ public class StudentTestScores extends javax.swing.JFrame {
     }//GEN-LAST:event_saveBtnActionPerformed
 
     public void load() {
-        
+        try {
+            File file = new File(address);
+            Scanner scanner = new Scanner(file);
+
+            int overwrite;
+            overwrite = JOptionPane.showConfirmDialog(null, "Are you sure you would like to load?\nCurrent work will be lost.", "Confim", 0, JOptionPane.QUESTION_MESSAGE);
+            if (overwrite == 0) {
+                students.clear();
+                while (scanner.hasNextLine()) {
+                    Student s = new Student(scanner.nextLine());
+                    s.setScore(1, Integer.parseInt(scanner.nextLine()));
+                    s.setScore(2, Integer.parseInt(scanner.nextLine()));
+                    s.setScore(3, Integer.parseInt(scanner.nextLine()));
+                    students.add(s);
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            JOptionPane.showMessageDialog(null, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
-    
+
     /**
      * Save the ArrayList to a file
      */
     public void save() {
         // TODO code application logic here
-        String address = System.getProperty("user.home") + "\\Documents\\StudentTestScores.txt";
-        System.out.println(address);
+        //System.out.println(address);
 
         try {
             File myObj = new File(address);
@@ -477,9 +498,9 @@ public class StudentTestScores extends javax.swing.JFrame {
      * @param where
      * @throws FileNotFoundException
      */
-    public void writeToFile(String where) throws FileNotFoundException {        
+    public void writeToFile(String where) throws FileNotFoundException {
         PrintWriter myFile = new PrintWriter(where);
-        for (Student student: students) {
+        for (Student student : students) {
             myFile.println(student.getName());
             myFile.println(student.getScore(1));
             myFile.println(student.getScore(2));
