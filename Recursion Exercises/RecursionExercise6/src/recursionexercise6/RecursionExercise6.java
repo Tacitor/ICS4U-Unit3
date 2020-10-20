@@ -7,7 +7,6 @@ package recursionexercise6;
 
 import TurtleGraphics.*;
 import java.awt.Color;
-import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,30 +23,46 @@ public class RecursionExercise6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //get center position ad size
         int x = Integer.parseInt(JOptionPane.showInputDialog("What is the x pos of the fractal?"));
         int y = Integer.parseInt(JOptionPane.showInputDialog("What is the y pos of the fractal?"));
         int r = Integer.parseInt(JOptionPane.showInputDialog("What is the size of the fractal?"));
         p.setColor(Color.red);
+        //draw the fractal
         fractalSq(x, y, r);
 
     }
-
+    
+    /**
+     * Draw a fractal of squares
+     * @param x
+     * @param y
+     * @param r 
+     */
     public static void fractalSq(int x, int y, int r) {
         //check base case if the size is viable
         if (r > 1) {
+            //draw the main square
             drawSquare(x, y, r);
+            //draw four smaller fractals in each corner
             fractalSq(x + r, y + r, r / 2);
             fractalSq(x + r, y - r, r / 2);
             fractalSq(x - r, y - r, r / 2);
             fractalSq(x - r, y + r, r / 2);
-        } else {
+        } /*else {
             //i++;
             //System.out.println("done " + i);
             return;
-        }
+        }*/
 
     }
-
+    
+    /**
+     * Draw a square based off a center and a half side length
+     * @param x
+     * @param y
+     * @param r 
+     */
     public static void drawSquare(int x, int y, int r) {
         p.up();
         p.move(x, y);
