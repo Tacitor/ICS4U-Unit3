@@ -8,6 +8,7 @@ package recursionexercise6;
 import TurtleGraphics.*;
 import java.awt.Color;
 import java.util.concurrent.TimeUnit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,27 +22,30 @@ public class RecursionExercise6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         // TODO code application logic here
-       p.setColor(Color.red);
-        fractalSq(0, 0, 100);
+        int x = Integer.parseInt(JOptionPane.showInputDialog("What is the x pos of the fractal?"));
+        int y = Integer.parseInt(JOptionPane.showInputDialog("What is the y pos of the fractal?"));
+        int r = Integer.parseInt(JOptionPane.showInputDialog("What is the size of the fractal?"));
+        p.setColor(Color.red);
+        fractalSq(x, y, r);
+
     }
-    
-    public static void fractalSq(int x, int y, int r) throws InterruptedException {
+
+    public static void fractalSq(int x, int y, int r) {
         //check base case if the size is viable
         if (r > 1) {
-            TimeUnit.MILLISECONDS.sleep(10);
             drawSquare(x, y, r);
-            fractalSq(x + r, y + r, r/2);
-            fractalSq(x + r, y - r, r/2);
-            fractalSq(x - r, y - r, r/2);
-            fractalSq(x - r, y + r, r/2);
+            fractalSq(x + r, y + r, r / 2);
+            fractalSq(x + r, y - r, r / 2);
+            fractalSq(x - r, y - r, r / 2);
+            fractalSq(x - r, y + r, r / 2);
         } else {
             i++;
             System.out.println("done " + i);
             return;
         }
-        
+
     }
 
     public static void drawSquare(int x, int y, int r) {
