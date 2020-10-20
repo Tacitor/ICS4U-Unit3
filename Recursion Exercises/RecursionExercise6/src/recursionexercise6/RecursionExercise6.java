@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 public class RecursionExercise6 {
 
     protected static StandardPen p = new StandardPen(500, 500);
-    protected static int i = 0;
+    //protected static int i = 0;
 
     /**
      * @param args the command line arguments
@@ -41,8 +41,8 @@ public class RecursionExercise6 {
             fractalSq(x - r, y - r, r / 2);
             fractalSq(x - r, y + r, r / 2);
         } else {
-            i++;
-            System.out.println("done " + i);
+            //i++;
+            //System.out.println("done " + i);
             return;
         }
 
